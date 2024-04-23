@@ -1,0 +1,32 @@
+@font-face {
+  font-family: 'Inter';
+  font-display: fallback;
+  font-weight: normal;
+  font-style: normal;
+  src: url("../fonts/InterRegular.eot");
+  src: url("../fonts/InterRegular.eot") format('embedded-opentype'), url("../fonts/InterRegular.woff2") format('woff2'), url("../fonts/InterRegular.woff") format('woff'), url("../fonts/InterRegular.ttf") format('truetype'), url("../fonts/InterRegular.svg#InterRegular") format('svg');
+}
+@font-face {
+  font-family: 'Gerhaus';
+  font-display: fallback;
+  font-weight: normal;
+  font-style: normal;
+  src: url("../fonts/GerhausRegular.eot");
+  src: url("../fonts/GerhausRegular.eot") format('embedded-opentype'), url("../fonts/GerhausRegular.woff2") format('woff2'), url("../fonts/GerhausRegular.woff") format('woff'), url("../fonts/GerhausRegular.ttf") format('truetype'), url("../fonts/GerhausRegular.svg#GerhausRegular") format('svg');
+}
+@font-face {
+  font-family: 'Noah';
+  font-display: fallback;
+  font-weight: normal;
+  font-style: normal;
+  src: url("../fonts/NoahRegular.eot");
+  src: url("../fonts/NoahRegular.eot") format('embedded-opentype'), url("../fonts/NoahRegular.woff2") format('woff2'), url("../fonts/NoahRegular.woff") format('woff'), url("../fonts/NoahRegular.ttf") format('truetype'), url("../fonts/NoahRegular.svg#NoahRegular") format('svg');
+}
+@font-face {
+  font-family: 'Noah';
+  font-display: fallback;
+  font-weight: bold;
+  font-style: normal;
+  src: url("../fonts/NoahBold.eot");
+  src: url("../fonts/NoahBold.eot") format('embedded-opentype'), url("../fonts/NoahBold.woff2") format('woff2'), url("../fonts/NoahBold.woff") format('woff'), url("../fonts/NoahBold.ttf") format('truetype'), url("../fonts/NoahBold.svg#NoahBold") format('svg');
+}
