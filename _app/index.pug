@@ -1,20 +1,37 @@
 -var path = '';
--var head_url = '';
--var head_title = '«»';
--var head_description = '';
--var head_img = 'img/banner.jpg';
+-var head_url = 'https://abramova.newsystempsy.com/business-arrangement/';
+-var head_title = 'Бизнес-расстановщик с Жанной Абрамовой';
+-var head_description = 'Стань бизнес-расстановщиком и выйди на новый уровень профессии и личного дохода';
+//-var head_img = 'img/banner.jpg';
 -var styles = path+'css/styles.min.css';
+-var fav_ap = path+'favicon.svg';
 -var fav_ico = path+'favicon.ico';
 -var fav_png = path+'favicon.png';
+-var libs = path+'js/libs.min.js';
 -var scripts = path+'js/scripts.min.js';
-//- -var noref = true
-//- -var action = '';
-//- -var group = '';
-//- -var formId = '';
-//- -var formVc = '';
-//- -var footer_title = true
-//- -var oferta = 'https://mastervision.su/oferta.docx'
-//- -var ak = true
+-var noref = true;
+-var io = true;
+-var href = '#prices';
+
+mixin b(bwcl,cl,href,p)
+	.button-wrapper(class=bwcl)
+		a.button(class=cl href=href)!=p
+mixin img(cl,src,alt)
+	img(class=cl src!=src alt=alt)
+mixin gt(cl,h3)
+	.general-title(class=cl)
+		h3!=h3
+mixin gt(cl,h3,sm)
+	.general-title.general-title-left(class=cl)
+		h3
+			if sm
+				small!=sm
+			=h3
+mixin gt(cl,h3,sm)
+	.general-title.general-right(class=cl)
+		h3!=h3
+			if sm
+				small!=sm
 
 doctype html
 html(lang="ru")
@@ -23,6 +40,24 @@ html(lang="ru")
 		include pug/scripts/head_scripts
 	body
 		include pug/scripts/body_top_scripts
+		.wrapper
+			br
+			br
+			br
+			br
+			.container
+				+gt('general-title-left','Надо учиться именно у нас','почему')
+			include pug/main/1-main
+			include pug/main/2-for
+			include pug/main/3-plan
+			include pug/main/4-author
+			include pug/main/5-prices-line
+			include pug/main/6-prices
+			include pug/main/7-about
+			include pug/main/8-revs
+			include pug/main/9-timer
+			include pug/main/10-why
+			include pug/main/11-faq
+		include pug/base/2-footer
 		include pug/base/3-scripts
-		//- include pug/scripts/chat
 		include pug/scripts/body_bottom_scripts
