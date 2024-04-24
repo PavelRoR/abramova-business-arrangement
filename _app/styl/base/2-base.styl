@@ -104,38 +104,45 @@ footer
 	text-transform uppercase
 	color: #2C3E54
 	font-family: G
-	font-size: 68px
+	font-size: 60px
 	// position relative
 	text-align center
+	line-height: 1.3
 	h3
 		display inline-block
-	small
+	span
 		display block
 		position relative
 		font-family: N
 		font-size: 28px
 		color #767F8D
 	&-left
-		top 0
-		left -46px
-		text-align: left 
+		span
+			top 20px
+			left -40px
+			text-align: left
+	&-right
+		span
+			bottom: 10px
+			right -40px
+			text-align: right
 .general-img
 	position absolute
 .mob-none
 	@media screen and (max-width 991px)
 		display none
-.general-text
-	margin-bottom: 10px
-	span
-		font-weight: bold
-	&-right
-		text-align right
-.general-list
-	margin-left: 30px
-	@media screen and (max-width 386px)
-		margin-left: 15px
-	li
-		position relative
-		margin-bottom: 10px
-		&:last-child
-			margin-bottom: 0
+// .general-text
+// 	margin-bottom: 10px
+// 	span
+// 		font-weight: bold
+// 	&-right
+// 		text-align right
+// .general-list
+// 	margin-left: 30px
+// 	@media screen and (max-width 386px)
+// 		margin-left: 15px
+// 	li
+// 		position relative
+// 		margin-bottom: 10px
+// 		&:last-child
+// 			margin-bottom: 0

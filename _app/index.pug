@@ -21,17 +21,23 @@ mixin img(cl,src,alt)
 mixin gt(cl,h3)
 	.general-title(class=cl)
 		h3!=h3
-mixin gt(cl,h3,sm)
+mixin gtl(cl,h3,sp)
 	.general-title.general-title-left(class=cl)
 		h3
-			if sm
-				small!=sm
+			if sp
+				span!=sp
 			=h3
-mixin gt(cl,h3,sm)
-	.general-title.general-right(class=cl)
+mixin gtr(cl,h3,sp)
+	.general-title.general-title-right(class=cl)
 		h3!=h3
-			if sm
-				small!=sm
+			if sp
+				span!=sp
+mixin gtc(cl,h3,sp)
+	.general-title.general-title-center(class=cl)
+		h3
+			if sp
+				span!=sp
+			=h3
 
 doctype html
 html(lang="ru")
@@ -41,15 +47,10 @@ html(lang="ru")
 	body
 		include pug/scripts/body_top_scripts
 		.wrapper
-			br
-			br
-			br
-			br
-			.container
-				+gt('general-title-left','Надо учиться именно у нас','почему')
 			include pug/main/1-main
-			include pug/main/2-for
-			include pug/main/3-plan
+			.plan-back
+				include pug/main/2-for
+				include pug/main/3-plan
 			include pug/main/4-author
 			include pug/main/5-prices-line
 			include pug/main/6-prices

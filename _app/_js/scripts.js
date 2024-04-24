@@ -45,7 +45,7 @@ mobMenu.on('click', function () {
     $('.revs-slider-text').slick({
         autoplay: false,
         autoplaySpeed: 3000,
-        slidesToShow: 4,
+        slidesToShow: 2,
         slidesToScroll: 1,
         infinite: 0,
         loop: false,
@@ -55,18 +55,7 @@ mobMenu.on('click', function () {
         centerPadding: '30px',
         adaptiveHeight: true,
         centerMode: 0,
-        appendArrows: '.text-revs-arrows-2',
         responsive: [
-            {
-                breakpoint: 1200,
-                settings: {
-                    slidesToShow: 3
-                }},
-            {
-            breakpoint: 992,
-            settings: {
-                slidesToShow: 2
-            }},
             {
             breakpoint: 651,
             settings: {
