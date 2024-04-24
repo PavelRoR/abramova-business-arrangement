@@ -1,6 +1,6 @@
 section#revs
 	.container
-		h3.revs-title Что говорят ученики о моих обучающих программах:
+		+gts('', 'Что говорят ученики о&nbsp;моих обучающих программах:')
 		.revs-slider-text
 			each n in [1,2,3,4,5,6,7,8]
 				a.text-rev-link(href=path+"img/revs/text-"+n+".png" data-fancybox="text-revs"): img(src=path+"img/revs/text-"+n+".png", alt="Отзыв "+n).text-rev-img

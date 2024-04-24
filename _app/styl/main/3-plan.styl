@@ -1,0 +1,57 @@
+#plan
+	padding-top: 100px
+.plan-block
+	background-color rgba(#fff, .7)
+	padding 0 100px 0 60px
+	margin-bottom: 25px
+	&-title
+		padding 15px 0
+		display flex
+		align-items: center
+		position relative
+		cursor pointer
+		&:before
+			content: ''
+			width 46px
+			height: 46px
+			background-image: url(../img/icons/close.svg)
+			background-repeat: no-repeat
+			background-position: center
+			background-size: cover
+			position absolute
+			top 35px
+			right -70px
+			transition: all .3s ease-in-out
+		&-num
+			width 165px
+			color #FE7D3B
+			text-align center
+			padding-right: 50px
+			margin-right: 50px
+			border-right: 3px solid #4F5F76
+			p
+				font-family: G
+				font-size: 60px
+				line-height: 1
+				text-transform uppercase
+				small
+					font-family: N
+					font-size: 20px
+					font-weight: bold
+					display block
+		&-name
+			width calc(100% - 270px)
+			h5
+				color #4F5F76
+				font-size: 28px
+				line-height: 1.1
+.plan-block-title.active
+	.plan-block-title-name h5
+		font-weight: bold
+	&:before
+		transform: rotate(45deg)
+.plan-block-info
+	display none
+	padding 25px 0 40px
+	&-text
+		margin-bottom: 20px

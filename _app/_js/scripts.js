@@ -41,6 +41,19 @@ mobMenu.on('click', function () {
     }
 });
 
+// Списки
+$('.plan-block-title').on('click', function(){
+    var plt = $(this);
+    if (!plt.hasClass('active')){
+        plt.addClass('active');
+        plt.next().slideDown(500)
+    }
+    else {
+        plt.removeClass('active');
+        plt.next().slideUp(500)
+    }
+});
+
     // слайдер с текстовыми отзывами
     $('.revs-slider-text').slick({
         autoplay: false,
