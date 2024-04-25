@@ -70,7 +70,7 @@ $('.plan-block-title, .faq-item-title').on('click', function(){
         centerMode: 0,
         responsive: [
             {
-            breakpoint: 651,
+            breakpoint: 992,
             settings: {
                 slidesToShow: 1
             }

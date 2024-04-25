@@ -1,11 +1,18 @@
 #why
 	padding 90px 0
+	@media screen and (max-width 991px)
+		padding 60px 0
+	@media screen and (max-width 386px)
+		padding 40px 0
 .why-item
 	width 100%
 	max-width 363px
 	margin 0 auto 90px
 	position relative
 	padding-top: 23px
+	@media screen and (max-width 991px)
+		margin-bottom: 70px
+		max-width none
 	&:before
 		content: ''
 		display block
@@ -18,5 +25,7 @@
 	&-text
 		font-size: 24px
 		line-height: 1.2
+		@media screen and (max-width 991px)
+			font-size: 20px
 		span
 			font-weight: bold

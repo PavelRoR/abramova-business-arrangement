@@ -3,7 +3,11 @@
 	background: #71767C url(../img/backs/prices.png) no-repeat center center
 	background-size cover
 	text-align center
-.prices-line-text	
+	@media screen and (max-width 991px)
+		padding 90px 0
+	@media screen and (max-width 386px)
+		padding 60px 0
+.prices-line-text
 	color #fff
 	font-size: 40px
 	font-weight: bold
@@ -11,3 +15,6 @@
 	max-width 700px
 	margin 0 auto 50px
 	text-transform uppercase
+	@media screen and (max-width 991px)
+		font-size: 24px
+		margin-bottom: 27px
