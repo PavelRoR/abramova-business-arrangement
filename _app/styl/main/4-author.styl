@@ -1,18 +1,27 @@
 #author
 	padding 100px 0
+	@media screen and (max-width 991px)
+		padding 60px 0
 .general-title-author
 	position relative
 	margin-bottom: -45px
 	@media screen and (max-width 991px)
 		margin-bottom: 20px
 		padding-bottom: 28px
-		text-align: left
+		text-align: center
 		h3
 			text-align center
 			// display block
-		span
-			left 0
+		// span
+		// 	left 0
+		// 	text-align: left
+	span
+		@media screen and (max-width 991px)
 			text-align: left
+			left: -30px
+			top 5px
+		@media screen and (max-width 610px)
+			left -10px
 	&:after
 		content: ''
 		display block
@@ -89,8 +98,9 @@
 	&-mob
 		font-size: 24px
 		text-transform uppercase
-		text-align center
-		display block
+		@media screen and (max-width 991px)
+			text-align center !important
+			display block !important
 .cert-text
 	width 100%
 	max-width 784px
@@ -102,6 +112,8 @@
 	text-transform uppercase
 	@media screen and (max-width 991px)
 		padding 20px 0 0
+	@media screen and (max-width 386px)
+		font-size: 22px
 	span
 		font-weight: bold
 	small
