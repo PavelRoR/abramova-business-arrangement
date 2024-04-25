@@ -1,6 +1,6 @@
 #revs
-	padding 90px 0 0
-	background-color: #CCEDE3
+	padding 90px 0
+	background-color: #FFDABF
 	@media screen and (max-width 650px)
 		padding 60px 0
 .revs-slider-text
@@ -10,32 +10,36 @@
 		width 100%
 .slick-list
 	border-radius: 15px
+.text-rev-wrap
+	border-radius: 23px
+	padding: 20px
+	display flex
+	align-items: center
+	justify-content: center
+	width 488px
+	height: 444px
+	background-image: linear-gradient(135deg, #A0C192 0%, #AAC99D 40%, #79A068 100%)
+	margin 0 auto
 .text-rev-img
-	height: 200px
-	object-fit: contain
-	object-position: center
-	width 480px
-	background-color #ECF3F3
-	border-radius: 15px
-	display block
-	margin: 0 auto
-	@media screen and (max-width 626px)
-		width 400px
-	@media screen and (max-width 535px)
-		width 300px
-	@media screen and (max-width 438px)
-		height: 120px
-		width 200px
-	@media screen and (max-width 338px)
-		width 150px
+	width auto
+	max-width: 100%;
+	// @media screen and (max-width 626px)
+	// 	width 400px
+	// @media screen and (max-width 535px)
+	// 	width 300px
+	// @media screen and (max-width 438px)
+	// 	height: 120px
+	// 	width 200px
+	// @media screen and (max-width 338px)
+	// 	width 150px
 .slick-next, .slick-prev
 	&:before
 		content: none
-	width 52px
-	height: 52px
+	width 25px
+	height: 25px
 	background-repeat: no-repeat
 	background-position: center
-	background-size: cover
+	background-size: contain
 .slick-next
 	background-image: url(../img/icons/next.svg)
 	right: -65px
@@ -44,6 +48,10 @@
 	&:focus
 	&:hover
 		background-image: url(../img/icons/next.svg)
+		opacity 1
+		background-repeat: no-repeat
+		background-position: center
+		background-size: contain
 .slick-prev
 	background-image: url(../img/icons/prev.svg)
 	left -65px
@@ -52,11 +60,7 @@
 	&:focus
 	&:hover
 		background-image: url(../img/icons/prev.svg)
-#last
-	padding: 0 0 90px
-	background-color: #CCEDE3
-	@media screen and (max-width 650px)
-		padding 0 0 90px
-		background-color #fff
-	@media screen and (max-width 480px)
-		padding 0 0 60px
+		opacity 1
+		background-repeat: no-repeat
+		background-position: center
+		background-size: contain

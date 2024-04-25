@@ -42,7 +42,7 @@ mobMenu.on('click', function () {
 });
 
 // Списки
-$('.plan-block-title').on('click', function(){
+$('.plan-block-title, .faq-item-title').on('click', function(){
     var plt = $(this);
     if (!plt.hasClass('active')){
         plt.addClass('active');
@@ -60,12 +60,12 @@ $('.plan-block-title').on('click', function(){
         autoplaySpeed: 3000,
         slidesToShow: 2,
         slidesToScroll: 1,
-        infinite: 0,
-        loop: false,
+        infinite: true,
+        loop: true,
         dots: 0,
         speed: 300,
         arrows: true,
-        centerPadding: '30px',
+        centerPadding: '15px',
         adaptiveHeight: true,
         centerMode: 0,
         responsive: [
