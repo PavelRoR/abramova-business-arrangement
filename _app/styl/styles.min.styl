@@ -9,15 +9,17 @@
 
 @import 'base/3-header'
 @import 'main/1-main'
+.main-wrapper
+	background-image: linear-gradient(-135deg,#E8E8E8 0%, #F5F5F5 36%, #E8E6E6 78%, #FFFFFF 100%)
 .plan-back
-	padding 700px 0 60px
+	padding 500px 0 60px
 	background-image url(../img/backs/plan.png)
 	background-repeat: no-repeat
-	background-position: bottom center
+	background-position: top center
 	background-size cover
-	@media screen and (max-width 386px)
+	@media screen and (max-width 991px)
 		background-image url(../img/backs/plan-mob.png)
-		padding 700px 0 40px
+		padding 70px 0 40px
 @import 'main/2-for'
 @import 'main/3-plan'
 @import 'main/4-author'
@@ -35,12 +37,10 @@
 	width: 56px;
 	height: 40px;
 	padding: 0
-	top 35px
+	top 22px
 	right: 15px;
 	cursor: pointer;
-	z-index: 200;
-	@media screen and (max-width 425px)
-		top 27px
+	z-index: 999;
 	&-line
 		width: 100%;
 		height: 5px;
