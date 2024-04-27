@@ -3,6 +3,8 @@
 	@media screen and (max-width 991px)
 		text-align center
 		padding 0 0 70px
+	@media screen and (max-width 560px)
+		padding-bottom: 40px
 .main
 	&-img
 		position absolute
@@ -15,7 +17,7 @@
 			display block
 			width 100%
 			max-width 350px
-			margin 0 auto -50px
+			margin 30px auto 0
 	&-pre
 		display inline-block
 		font-size: 20px
@@ -64,7 +66,7 @@
 			border-radius: 10px
 			background-color rgba(#fff,.7)
 			text-transform none
-			margin 0 auto
+			margin 30px auto
 			color #2C3E54
 			position relative
 	&-date
@@ -90,8 +92,8 @@
 	@media screen and (max-width 991px)
 		display block
 		position absolute
-		top: 70px
-		left -30px
+		top: 320px
+		left 30px
 #what
 	padding 0
 	margin-bottom: -300px
@@ -114,8 +116,14 @@
 		font-size: 28px
 		@media screen and (max-width 991px)
 			font-size: 24px
+			line-height: 1.1
+	// p
+	// 	@media screen and (max-width 991px)
+	// 		line-height: 1.1
 	p:first-of-type
 		margin: 30px 0
+		@media screen and (max-width 991px)
+			margin 15px 0
 // .main-img-back-mob-2
 // 	@media screen and (max-width 991px)
 // 		position absolute
