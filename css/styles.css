@@ -661,7 +661,7 @@ header {
 @media screen and (max-width: 991px) {
   .header-logo {
     float: none;
-    width: 90px;
+    width: 65px;
   }
 }
 .header-menu {
@@ -733,7 +733,7 @@ header {
 }
 @media screen and (max-width: 386px) {
   .main-img-mob {
-    max-width: 220px;
+    max-width: 240px;
   }
 }
 .main-pre {
@@ -757,7 +757,7 @@ header {
 }
 @media screen and (max-width: 560px) {
   .main-pre {
-    font-size: 16px;
+    font-size: 14px;
     padding: 5px 20px;
   }
 }
@@ -783,9 +783,10 @@ header {
     font-size: 42px;
   }
 }
-@media screen and (max-width: 386px) {
+@media screen and (max-width: 425px) {
   .main-title {
-    font-size: 27px;
+    font-size: 24px;
+    margin: 5px 0;
   }
 }
 .main-title small {
