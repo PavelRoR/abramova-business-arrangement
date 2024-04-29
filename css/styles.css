@@ -648,6 +648,11 @@ header {
     margin-bottom: 20px;
   }
 }
+@media screen and (max-width: 386px) {
+  header {
+    margin-bottom: 0;
+  }
+}
 .header-logo {
   float: left;
   width: 118px;
@@ -696,7 +701,7 @@ header {
   position: fixed;
 }
 #main {
-  padding: 0 0 360px;
+  padding: 0 0 100px;
 }
 @media screen and (max-width: 991px) {
   #main {
@@ -711,20 +716,25 @@ header {
 }
 .main-img {
   position: absolute;
-  top: -740px;
-  right: -1450px;
+  top: -1040px;
+  right: -1250px;
   z-index: -1;
 }
 @media screen and (max-width: 1199px) {
   .main-img {
-    right: -1600px;
+    right: -1250px;
   }
 }
 .main-img-mob {
   display: block;
   width: 100%;
   max-width: 350px;
-  margin: 30px auto 0;
+  margin: -10px auto -60px;
+}
+@media screen and (max-width: 386px) {
+  .main-img-mob {
+    max-width: 220px;
+  }
 }
 .main-pre {
   display: inline-block;
@@ -753,10 +763,15 @@ header {
 }
 .main-title {
   font-family: 'Gerhaus', sans-serif;
-  font-size: 65px;
+  font-size: 90px;
   color: #2c3e54;
   text-transform: uppercase;
   line-height: 1.2;
+}
+@media screen and (max-width: 1199px) {
+  .main-title {
+    font-size: 70px;
+  }
 }
 @media screen and (max-width: 991px) {
   .main-title {
@@ -770,26 +785,31 @@ header {
 }
 @media screen and (max-width: 386px) {
   .main-title {
-    font-size: 36px;
+    font-size: 27px;
   }
 }
 .main-title small {
   display: block;
   font-family: 'Noah', sans-serif;
-  font-size: 28px;
+  font-size: 48px;
 }
 @media screen and (max-width: 991px) {
   .main-title small {
     font-size: 22px;
   }
 }
+@media screen and (max-width: 386px) {
+  .main-title small {
+    font-size: 18px;
+  }
+}
 .main-subtitle {
-  font-size: 20px;
+  font-size: 24px;
   color: #4f5f76;
   text-transform: uppercase;
   width: 100%;
-  max-width: 420px;
-  margin: 50px 0;
+  max-width: 520px;
+  margin: 40px 0;
   line-height: 1.3;
 }
 @media screen and (max-width: 991px) {
@@ -803,6 +823,11 @@ header {
     margin: 30px auto;
     color: #2c3e54;
     position: relative;
+  }
+}
+@media screen and (max-width: 386px) {
+  .main-subtitle {
+    font-size: 18px;
   }
 }
 .main-date {
@@ -828,6 +853,11 @@ header {
     margin: 20px auto;
   }
 }
+@media screen and (max-width: 386px) {
+  .main-date {
+    margin: -20px auto 10px;
+  }
+}
 .main-date p {
   font-size: 20px;
   font-weight: bold;
@@ -847,8 +877,18 @@ header {
   .main-img-back-mob-1 {
     display: block;
     position: absolute;
-    top: 320px;
-    left: 30px;
+    top: 20px;
+    left: -30px;
+  }
+}
+@media screen and (max-width: 386px) {
+  .main-img-back-mob-1 {
+    width: 688px;
+    height: 688px;
+    left: -50%;
+    right: -50%;
+    margin: 0 auto;
+    display: block;
   }
 }
 #what {
