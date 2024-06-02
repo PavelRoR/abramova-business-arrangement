@@ -79,5 +79,26 @@ $('.plan-block-title, .faq-item-title').on('click', function(){
 
     // модалка
     $(['data-fancybox']).fancybox();
+
+
+    var clock;
+    var date = new Date("June 10, 2024 23:59 UTC+3");
+    var currentDate = new Date();
+    var futureDate = date;
+    var diff = futureDate.getTime() / 1000 - currentDate.getTime() / 1000;
+			clock = $('.clock').FlipClock(diff, {
+		        clockFace: 'DailyCounter',
+                countdown: true,
+                language: 'ru',
+		        callbacks: {
+		        	stop: function() {
+		        		// $('.message').html('The clock has stopped!')
+		        	}
+		        }
+		    });
+				    
+		    // clock.setTime(220880);
+		    // clock.setCountdown(true);
+		    // clock.start();
 /*Конец документа*/
 });

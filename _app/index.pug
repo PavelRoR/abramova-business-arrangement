@@ -13,12 +13,12 @@
 -var io = true;
 -var href = '#prices';
 
-mixin b(bwcl,cl,href,p, n)
+mixin b(bwcl,cl,href,p, n, target)
 	.button-wrapper(class=bwcl)
 		if n
 			a.button(class=cl href=href onclick="awoOpenFormModal("+n+")")!=p
 		else
-			a.button(class=cl href=href)!=p
+			a.button(class=cl href=href target=target)!=p
 mixin img(cl,src,alt)
 	img(class=cl src!=src alt=alt)
 mixin gt(cl,h3)
@@ -67,7 +67,7 @@ html(lang="ru")
 			include pug/main/11-faq
 		include pug/base/2-footer
 		include pug/base/3-scripts
-		<script src="https://shop.iomp.ru/?r=fp/admin/getformscript&id=38&vc=628d525fed2486705f1ab6f1a2876060&popup=1&hideButton=1"></script>
-		<script src="https://shop.iomp.ru/?r=fp/admin/getformscript&id=39&vc=29eacee5af1791e8d1fcf3c9cf740db4&popup=1&hideButton=1"></script>
-		<script src="https://shop.iomp.ru/?r=fp/admin/getformscript&id=40&vc=4acbffb056ef10ed08ca8ce8592e75cb&popup=1&hideButton=1"></script>
+		//- <script src="https://shop.iomp.ru/?r=fp/admin/getformscript&id=38&vc=628d525fed2486705f1ab6f1a2876060&popup=1&hideButton=1"></script>
+		//- <script src="https://shop.iomp.ru/?r=fp/admin/getformscript&id=39&vc=29eacee5af1791e8d1fcf3c9cf740db4&popup=1&hideButton=1"></script>
+		//- <script src="https://shop.iomp.ru/?r=fp/admin/getformscript&id=40&vc=4acbffb056ef10ed08ca8ce8592e75cb&popup=1&hideButton=1"></script>
 		include pug/scripts/body_bottom_scripts

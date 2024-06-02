@@ -1,0 +1,160 @@
+#timer
+	padding 90px 0
+	@media screen and (max-width 560px)
+		padding 60px 0
+.timer
+	margin 45px auto 85px
+	@media screen and (max-width 560px)
+		margin 30px auto 50px
+	@media screen and (max-width 386px)
+		margin 25px auto 35px
+	&-title
+		width 100%
+		max-width 722px
+		margin 0 auto 80px
+		display flex
+		flex-direction: row
+		align-items: center
+		justify-content: center
+		@media screen and (max-width 991px)
+			flex-direction: column
+			text-align: center
+			margin-bottom: 60px
+		@media screen and (max-width 386px)
+			margin-bottom: 45px
+		h3
+			font-family: G
+			font-size: 63px
+			@media screen and (max-width 991px)
+				line-height: 63px
+			@media screen and (max-width 560px)
+				font-size: 38px
+				line-height: 38px
+			@media screen and (max-width 386px)
+				font-size: 32px
+				line-height: 32px
+		p
+			font-size: 28px
+			font-weight: bold
+			text-transform uppercase
+			padding-left: 25px
+			margin-left: 25px
+			position relative
+			line-height: 1.1
+			@media screen and (max-width 991px)
+				padding 20px 0 0
+				margin: 20px 0 0
+			@media screen and (max-width 560px)
+				font-size: 24px
+			&:before
+				content: ''
+				display block
+				width 2px
+				height: 98px
+				background-color: #000
+				position absolute
+				left 0
+				top: -17px
+				@media screen and (max-width 991px)
+					width 70px
+					height: 2px
+					top 0
+					left 0
+					right 0
+					margin 0 auto
+	&-text
+		text-align center
+		font-size: 28px
+		font-weight: bold
+		color #FE7D3B
+		text-transform uppercase
+		line-height: 1.1
+		img
+			margin-top: 20px
+		@media screen and (max-width 560px)
+			font-size: 24px
+.flip-clock-wrapper
+	margin-top: 0
+	width 50%
+	@media screen and (max-width 1199px)
+		width 55%
+	@media screen and (max-width 991px)
+		width 100%
+		max-width 520px
+.flip-clock-wrapper ul
+	width 70px
+	height: 80px
+	font-size: 55px
+	line-height: 55px
+	border-radius: 0
+	@media screen and (max-width 560px)
+		font-size: 40px
+		line-height: 40px
+		height 60px
+		width 60px
+	@media screen and (max-width 386px)
+		font-size: 32px
+		line-height: 32px
+		height: 40px
+		width 50px
+	li
+		line-height: 77px
+		@media screen and (max-width 560px)
+			line-height: 60px
+		@media screen and (max-width 386px)
+			line-height: 40px
+.flip-clock-divider
+	height 95px
+	@media screen and (max-width 560px)
+		height 80px
+	@media screen and (max-width 386px)
+		height 75px
+		width 15px
+.flip-clock-divider .flip-clock-label
+	color #fff
+.flip-clock-dot
+	background-color: #000
+	box-shadow none
+	border-radius: 0
+	left 3px
+	@media screen and (max-width 560px)
+		width 4px
+		height: 4px
+		left 4px
+	@media screen and (max-width 386px)
+		left 2px
+	&.top 
+		top 30px
+		@media screen and (max-width 560px)
+			top: 25px
+		@media screen and (max-width 386px)
+			top 20px
+	&.bottom
+		bottom: 33px
+		@media screen and (max-width 560px)
+			bottom: 35px
+		@media screen and (max-width 386px)
+			bottom: 42px
+.flip-clock-wrapper ul li a div div.inn
+	font-family: G
+	color: #000
+	background-color: #D9D9D9
+	font-size: 55px
+	text-shadow: none
+	border-radius: 0
+	@media screen and (max-width 560px)
+		font-size: 40px
+	@media screen and (max-width 386px)
+		font-size: 28px
+.flip-clock-wrapper ul li a div
+	font-size: 55px
+	@media screen and (max-width 560px)
+		font-size: 40px
+	@media screen and (max-width 386px)
+		font-size: 28px
+.flip-clock-wrapper .flip
+	box-shadow: none
+.flip-clock-wrapper ul li a div.down
+	border-radius: 0
+.flip-clock-wrapper ul li a div.up::after
+	background-color #D9D9D9
